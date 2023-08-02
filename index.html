@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<title>Length Converter</title>
+
+<link rel="stylesheet" href="style/style.css">
+<body>
+    
+<script defer src="script/main.js"></script>
+
+<div class="center">
+<h2>LENGTH CONVERTER </h2>
+    <span class="titlez">
+    <ul><b>
+    <li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Meters </li>
+    <li> Inches to &nbsp &nbsp &nbsp Centimeters </li>
+    <li> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Yards </li>
+    </ul></b>
+    </span>
+
+<p><i>Please enter a value in the Feet field to convert the value to Meters, Centimeters or Yards:</i></p>
+
+<form>
+    <div>
+    <label class="inputfeetz"><b>Feet: </b></label> &nbsp &nbsp
+    <input class="input"  id="inputFeet" type="number" placeholder="Feet" name="inputFeet">
+    </div>
+
+    <div>
+    <input type="button" id="inputFeet"  onclick="convert(); return false;" value="Convert Now">
+    </input>
+    </div>
+
+    <div>
+    <input type="reset" id="inputFeet" onclick="clearFields()" value="&nbsp Clear Data &nbsp">
+    </input>
+    </div>
+
+</form>
+
+    <div class="resultsz">
+        <p class="containerz"><b>Meters: </b> <span id="outputMeters"></span></p>
+        <p class="containerx"><b>Centimeters: </b> <span id="outputCentimeters"></span></p>
+        <p class="containery"><b>Yards: </b> <span id="outputYards"></span></p>
+    </div>
+</div>
+
+</body>
+</html>
